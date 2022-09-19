@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+<link rel="stylesheet" href="Contagem.css">
+</head>
+<body>
+<div id="box">
+
+    <h1 id="titulo">Contador</h1>
+
+         <input type="number" name="num" placeholder="Inicio:" id="inicio">  <!-- inicio -->
+
+         <input type="number" name="num" placeholder="Fim:" id="fim">  <!-- fim -->
+
+         <input type="number" name="num" placeholder="Passos:" id="passo">  <!-- passo -->
+
+
+
+    <input type="button" value="Contar" id="contar" onclick="contar()">     <!-- botão -->
+
+
+    <div id="res"> Contando:  </div>  <!-- resultado -->
+
+</div>
+
+<script>
+
+function contar(){
+
+    var numi = document.getElementById("inicio")
+    var ni = Number(numi.value)                           //numero inicio
+
+    var fimi = document.getElementById("fim")
+    var fi = Number(fimi.value)                           //numero fim
+
+    var pasi = document.getElementById("passo")
+    var pi = Number(pasi.value)                           //numero passos
+    
+    var res = document.getElementById("res")
+
+
+    if ( ni == 0 || fi == 0 || pi == 0){
+
+        window.alert("Preencha todos os campos vazios")   // alerta para preencher os capos vazios
+
+    }else{
+
+        for( var c = ni /*inicio*/ ; c <= fi /*fim*/ ; c += pi /*passos*/ ){
+            
+            res.innerHTML += ` ${c} \u{1f449}` //numero que será impresso na tela
+        }
+        res.innerHTML += ` \u{1f3c1} `
+
+    }
+
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: #333;
+    color: #fff;
+    font: normal  arial red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box{
+    position: relative;
+    border: solid 4px #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+
+    /* margin-left: 100%;
+    margin-top: 30px; */
+}
+
+
+#inicio{
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+#fim{
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+#passo{
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+#contar{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+#res{
+    margin-top: 10px;
+}
